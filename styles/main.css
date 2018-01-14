@@ -1,0 +1,516 @@
+/* Flex Box Layout Class Example Modified*/
+* {
+    margin: 10;
+    padding: 0;
+}
+h1,h2,h3,h4 {font-family:'Merriweather', serif;}
+h5{font-family: 'Courgette', cursive;}
+nav {
+    margin: 0px
+}
+
+nav ul {
+    overflow: auto;
+    list-style-type: none;
+}
+nav li {
+    height: px;
+    float: right;
+    margin-right: 10px;
+    border-right: 1px solid #aaa;
+    padding: 15 20px;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #ccc;
+    font: 25px/1 Helvetica, Verdana, sans-sarif;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+li a:hover {
+    color: #066000;
+}
+
+li.active a {
+    font-weight: bold;
+    color: #066000
+}
+/*Styles the body for the index page*/
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    line-height: 100%;
+    text-align: left;
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-size: 1.1em;
+    color: hsl(0%, 0%, 20%);
+    -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  }
+ /*Styles The Nav for all pages*/ 
+  .nav{
+    order: -1;
+    padding: 1em;
+    background-color: #000000;
+  }
+  
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+  
+  .main{
+    padding: 1em;
+    background-color: #ffffff;
+  }
+  
+  .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%
+  }
+  
+  .col{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .aside{
+    padding: 1em;
+    background-color: #000000;
+  }
+  
+  .footer{
+    padding: 1em;
+    background-color: #666666;
+  }
+  /*Media quries makes the pages adaptable to a device i.e computer,mobilephone or tablet*/
+  @media (max-width: 30em) {
+    .main{
+      flex: 1 0 auto;
+    }
+    .row{
+      flex-direction: column;
+    }
+  }
+  
+  @media (min-width: 30em) {
+    .nav{
+      display: block;
+    }
+    .wrapper{
+      flex-direction: row;
+    }
+    .main{
+      flex: 1 1 auto;
+    }
+    .aside{
+      width: 20%;
+    }
+  }
+  /* Backgroung Image*/
+  .main{ 
+background:url(../img/wintry.jpg) no-repeat
+ fixed;
+ background-size:  contain;
+
+  }
+
+  video{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+/* Glossary Page*/
+  body#glossary{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    line-height: 100%;
+    text-align: left;
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-size: 1.1em;
+    color: hsl(0%, 0%, 20%);
+  }
+  
+ 
+
+  .wrapper1{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+  
+  .main1{
+    padding: 1em;
+    background-color: #ffffff;
+  }
+  
+  .row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%
+  }
+  
+  .col1{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .aside1{
+    padding: 1em;
+    background-color: #000000;
+  }
+  
+
+  
+  @media (max-width: 30em) {
+    .main1{
+      flex: 1 0 auto;
+    }
+    .row1{
+      flex-direction: column;
+    }
+  }
+  
+  @media (min-width: 30em) {
+    .nav{
+      display: block;
+    }
+    .wrapper1{
+      flex-direction: row;
+    }
+    .main1{
+      flex: 1 1 auto;
+    }
+    .aside1{
+      width: 20%;
+    }
+  }
+  /* Backgroung Image*/
+  .main1{
+    background:url(../img/wintry.jpg) no-repeat
+     fixed;
+     background-size:contain;
+  }
+/* Jobs Page */
+  body#jobs{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    line-height: 100%;
+    text-align: left;
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-size: 1.1em;
+    color: hsl(0%, 0%, 20%);
+  }
+  
+  
+
+  
+  .wrapper2{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+  
+  .main2{
+    padding: 1em;
+    background-color: #ffffff;
+  }
+  
+  .row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%
+  }
+  
+  .col2{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .aside2{
+    padding: 1em;
+    background-color: #000000;
+  }
+  
+
+  
+  @media (max-width: 30em) {
+    .main2{
+      flex: 1 0 auto;
+    }
+    .row2{
+      flex-direction: column;
+    }
+  }
+  
+  @media (min-width: 30em) {
+    .nav{
+      display: block;
+    }
+    .wrapper2{
+      flex-direction: row;
+    }
+    .main2{
+      flex: 1 1 auto;
+    }
+    .aside2{
+      width: 20%;
+    }
+  }
+  /* Backgroung Image*/
+  .main2{
+    background:url(../img/wintry.jpg) no-repeat
+     fixed;
+     background-size:contain;
+    }
+  /*Computing Page*/
+
+  body#computing{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    line-height: 100%;
+    text-align: left;
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-size: 1.1em;
+    color: hsl(0%, 0%, 20%);
+  }
+  
+
+  
+  .wrapper3{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+  
+  .main3{
+    padding: 1em;
+    background-color: #ffffff;
+  }
+  
+  .row3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%
+  }
+  
+  .col3{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .aside3{
+    padding: 1em;
+    background-color: #000000;
+  }
+  
+
+  
+  @media (max-width: 30em) {
+    .main3{
+      flex: 1 0 auto;
+    }
+    .row3{
+      flex-direction: column;
+    }
+  }
+  
+  @media (min-width: 30em) {
+    .nav{
+      display: block;
+    }
+    .wrapper3{
+      flex-direction: row;
+    }
+    .main3{
+      flex: 1 1 auto;
+    }
+    .aside3{
+      width: 20%;
+    }
+  }
+  /* Backgroung Image*/
+  .main3{
+    background:url(../img/wintry.jpg) no-repeat
+     fixed;
+     background-size:contain;
+    }
+/* Design Page*/
+
+body#design{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  line-height: 100%;
+  text-align: left;
+  font-family: 'Open Sans Condensed',sans-serif;
+  font-size: 1.1em;
+  color: hsl(0%, 0%, 20%);
+}
+
+
+
+.wrapper4{
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+.main4{
+  padding: 1em;
+  background-color: #ffffff;
+}
+
+.row4{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%
+}
+
+.col4{
+  display: flex;
+  flex-direction: column;
+}
+
+.aside4{
+  padding: 1em;
+  background-color: #000000;
+}
+
+
+
+@media (max-width: 30em) {
+  .main4{
+    flex: 1 0 auto;
+  }
+  .row4{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 30em) {
+  .nav{
+    display: block;
+  }
+  .wrapper4{
+    flex-direction: row;
+  }
+  .main4{
+    flex: 1 1 auto;
+  }
+  .aside4{
+    width: 20%;
+  }
+}
+/* Backgroung Image*/
+.main4{
+  background:url(../img/wintry.jpg) no-repeat
+   fixed;
+   background-size:contain;
+  }
+/* Reflection */
+
+body#reflection{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  line-height: 100%;
+  text-align: left;
+  font-family: 'Open Sans Condensed',sans-serif;
+  font-size: 1.1em;
+  color: hsl(0%, 0%, 20%);
+}
+
+
+
+.wrapper5{
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+.main5{
+  padding: 1em;
+  background-color: #ffffff;
+}
+
+.row5{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%
+}
+
+.col5{
+  display: flex;
+  flex-direction: column;
+}
+
+.aside5{
+  padding: 1em;
+  background-color: #000000;
+}
+
+
+
+@media (max-width: 30em) {
+  .main5{
+    flex: 1 0 auto;
+  }
+  .row5{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 30em) {
+  .nav{
+    display: block;
+  }
+  .wrapper5{
+    flex-direction: row;
+  }
+  .main5{
+    flex: 1 1 auto;
+  }
+  .aside5{
+    width: 20%;
+  }
+}
+/* Backgroung Image*/
+.main5{
+  background:url(../img/wintry.jpg) no-repeat
+   fixed;
+   background-size:contain;
+  }
+
+
+  
+
